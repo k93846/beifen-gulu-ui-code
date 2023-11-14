@@ -57,6 +57,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
+aside{
+    position:relative;
+    z-index: 50;
+}
 .layout {
     display: flex;
     flex-direction: column;

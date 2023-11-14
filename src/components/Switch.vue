@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>SwitchDetail 组件示例 </h1>
+    <h1>Switch组件示例 </h1>
     <div class="demo">
       <h2>常规用法</h2>
       <div class="demo-component">
@@ -43,8 +43,8 @@ import SwitchDetail from '../lib/SwitchDetail.vue';
 import ButtonDetail from '../lib/ButtonDetail.vue';
 import Switch1Demo from './Switch1.demo.vue';
 import Switch2Demo from './Switch2.demo.vue';
-import Switch1DemoCode from './Switch1DemoCode.js'
-import Switch2DemoCode from './Switch2DemoCode.js'
+import Switch1DemoCode from './code of how to use/Switch1DemoCode.js'
+import Switch2DemoCode from './code of how to use/Switch2DemoCode.js'
 
 export default {
   components: { SwitchDetail, ButtonDetail, Switch1Demo, Switch2Demo },

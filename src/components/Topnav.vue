@@ -8,7 +8,7 @@
             </router-link>
             <ul class="menu">
                 <li>
-                    <router-link to="/doc">文档</router-link>
+                    <router-link to="/doc/intro">文档</router-link>
                 </li>
             </ul>
             <svg v-if="toogleMenuVisible" class="toggleAside" @click="toggleMenu">
@@ -43,6 +43,8 @@ export default {
 <style lang="scss" scoped>
 $color: #007974;
 
+
+
 .topnav {
     color: $color;
     display: flex;
@@ -52,7 +54,7 @@ $color: #007974;
     left: 0;
     width: 100%;
 
-    z-index: 20;
+    z-index: 60;
     justify-content: center;
     align-items: center;
 
@@ -85,6 +87,9 @@ $color: #007974;
         transform: translateY(-50%);
         display: none;
         background: fade-out(black,0.9);
+        &:hover{
+            cursor: pointer;
+        }
 
     }
 

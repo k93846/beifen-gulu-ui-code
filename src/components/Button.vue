@@ -2,7 +2,7 @@
     <!-- 已完成：修改该页面的样式 -->
     <!-- 已完成：添加每个示例的代码文本 -->
     <div>
-        <h1>button组件示例</h1>
+        <h1>Button组件示例</h1>
         <div class="demo">
             <h2>示例1</h2>
             <div class="demo-component">
@@ -22,7 +22,23 @@
             </div>
         </div>
 
-
+        <div class="demo">
+            <h2>示例5</h2>
+            <div class="demo-component">
+                <ButtonDetail :theme="`button`" loading>加载按钮</ButtonDetail>
+                <ButtonDetail :theme="`button`">加载完毕</ButtonDetail>
+            </div>
+            <div class="demo-actions">
+                <!-- 使得点击后出现代码已完成 -->
+                <ButtonDetail @click="seecode5">查看代码</ButtonDetail>
+            </div>
+            <div class="demo-code">
+                <!-- 已完成：封装代码文本，使用字符串 -->
+                <article class="markdown-body">
+                    <pre v-if="codeVisible5" v-text="ButtonCode5.a"></pre>
+                </article>
+            </div>
+        </div>
         <div class="demo">
             <h2>示例2</h2>
             <div class="demo-component">
@@ -47,8 +63,6 @@
                 </article>
             </div>
         </div>
-
-
         <div class="demo">
             <h2>示例3</h2>
             <div class="demo-component">
@@ -92,35 +106,17 @@
                 </article>
             </div>
         </div>
-
-        <div class="demo">
-            <h2>示例5</h2>
-            <div class="demo-component">
-                <ButtonDetail :theme="`button`" loading>加载按钮</ButtonDetail>
-                <ButtonDetail :theme="`button`">加载完毕</ButtonDetail>
-            </div>
-            <div class="demo-actions">
-                <!-- 使得点击后出现代码已完成 -->
-                <ButtonDetail @click="seecode5">查看代码</ButtonDetail>
-            </div>
-            <div class="demo-code">
-                <!-- 已完成：封装代码文本，使用字符串 -->
-                <article class="markdown-body">
-                    <pre v-if="codeVisible5" v-text="ButtonCode5.a"></pre>
-                </article>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
 import { ref } from 'vue';
 import ButtonDetail from '../lib/ButtonDetail.vue';
-import ButtonCode1 from './ButtonCode1';
-import ButtonCode2 from './ButtonCode2';
-import ButtonCode3 from './ButtonCode3';
-import ButtonCode4 from './ButtonCode4';
-import ButtonCode5 from './ButtonCode5';
+import ButtonCode1 from './code of how to use/ButtonCode1';
+import ButtonCode2 from './code of how to use/ButtonCode2';
+import ButtonCode3 from './code of how to use/ButtonCode3';
+import ButtonCode4 from './code of how to use/ButtonCode4';
+import ButtonCode5 from './code of how to use/ButtonCode5';
 
 export default {
     components: { ButtonDetail },

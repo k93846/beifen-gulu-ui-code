@@ -32,7 +32,7 @@
 <script>
 import DialogDetail from '../lib/DialogDetail.vue';
 import ButtonDetail from '../lib/ButtonDetail.vue';
-import DialogCode from './DialogCode';
+import DialogCode from './code of how to use/DialogCode';
 import { ref } from 'vue';
 export default {
     components: {
