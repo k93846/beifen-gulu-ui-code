@@ -1,0 +1,5 @@
+export {default as SwitchDetail} from './SwitchDetail.vue'
+export {default as Tabs} from './Tabs.vue'
+export {default as Tab} from './Tab.vue'
+export {default as ButtonDetail} from './ButtonDetail.vue'
+export {default as DialogDetail} from './DialogDetail.vue'
