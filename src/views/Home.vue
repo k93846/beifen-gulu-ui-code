@@ -22,7 +22,7 @@
         </li>
         <li>
           <svg>
-            <use xlink:href="#icon-typescript"></use>
+            <use xlink:href="#icon-js"></use>
           </svg>
           <h3>基于 JavaScript </h3>
           <p>源代码采用 JavaScript 书写</p>
@@ -43,7 +43,7 @@
 import Topnav from "../components/Topnav.vue";
 export default {
   components: { Topnav },
-  
+
 };
 </script>
 <style lang="scss" scoped>
@@ -56,11 +56,12 @@ $color: #007974;
 .topnavAndBanner {
   background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
   clip-path: ellipse(80% 60% at 50% 40%);
+  
 }
 
 .features {
   margin: 64px auto;
-  width: 375px;
+  width: 75%;
 
   @media (min-width: 800px) {
     width: 800px;
@@ -74,8 +75,15 @@ $color: #007974;
     display: flex;
     flex-wrap: wrap;
 
+    @media(max-width:800px) {
+      justify-content: center;
+    }
+
     >li {
-      width: 375px;
+      @media(max-width:800px) {
+        width: 90%;
+    }
+      width:375px;
       margin: 16px 0;
       display: grid;
       justify-content: start;
