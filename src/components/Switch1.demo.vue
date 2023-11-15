@@ -4,7 +4,7 @@
 
 <script>
 import { ref } from 'vue';
-import SwitchDetail from '../lib/SwitchDetail.vue';
+import SwitchDetail from '../lib/Switch.vue';
 export default {
     components:{SwitchDetail},
     setup(){

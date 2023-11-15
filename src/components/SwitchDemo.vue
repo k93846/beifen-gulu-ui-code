@@ -39,8 +39,8 @@
 
 <script>
 import { ref } from 'vue';
-import SwitchDetail from '../lib/SwitchDetail.vue';
-import ButtonDetail from '../lib/ButtonDetail.vue';
+import SwitchDetail from '../lib/Switch.vue';
+import ButtonDetail from '../lib/Button.vue';
 import Switch1Demo from './Switch1.demo.vue';
 import Switch2Demo from './Switch2.demo.vue';
 import Switch1DemoCode from './code of how to use/Switch1DemoCode.js'

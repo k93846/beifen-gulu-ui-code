@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import DialogDetail from '../lib/DialogDetail.vue';
-import ButtonDetail from '../lib/ButtonDetail.vue';
+import DialogDetail from '../lib/Dialog.vue';
+import ButtonDetail from '../lib/Button.vue';
 import DialogCode from './code of how to use/DialogCode';
 import { ref } from 'vue';
 export default {

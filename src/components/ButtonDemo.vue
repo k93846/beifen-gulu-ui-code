@@ -121,7 +121,7 @@
 
 <script>
 import { ref } from 'vue';
-import ButtonDetail from '../lib/ButtonDetail.vue';
+import ButtonDetail from '../lib/Button.vue';
 import ButtonCode1 from './code of how to use/ButtonCode1';
 import ButtonCode2 from './code of how to use/ButtonCode2';
 import ButtonCode3 from './code of how to use/ButtonCode3';

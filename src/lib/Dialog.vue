@@ -23,7 +23,7 @@
 
 
 <script>
-import ButtonDetail from './ButtonDetail.vue';
+import ButtonDetail from './Button.vue';
 export default {
     props: {
         visible: {

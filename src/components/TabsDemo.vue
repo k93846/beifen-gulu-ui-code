@@ -28,7 +28,7 @@
 import { ref } from 'vue';
 import Tab from '../lib/Tab.vue';
 import Tabs from '../lib/Tabs.vue';
-import ButtonDetail from '../lib/ButtonDetail.vue';
+import ButtonDetail from '../lib/Button.vue';
 import TabsCode from './code of how to use/TabsCode.js'
 export default {
     inheritAttrs: false,
