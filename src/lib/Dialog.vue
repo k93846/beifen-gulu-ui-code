@@ -12,8 +12,8 @@
                         <slot name="content"></slot>
                     </main>
                     <footer>
-                        <ButtonDetail :level="`main`" @click="ok">确定</ButtonDetail>
-                        <ButtonDetail @click="cancel">取消</ButtonDetail>
+                        <Button :level="`main`" @click="ok">确定</Button>
+                        <Button @click="cancel">取消</Button>
                     </footer>
                 </div>
             </div>
@@ -23,7 +23,7 @@
 
 
 <script>
-import ButtonDetail from './Button.vue';
+import Button from './Button.vue';
 export default {
     props: {
         visible: {
@@ -42,7 +42,7 @@ export default {
         }
     },
     components: {
-        ButtonDetail
+        Button
     },
     setup(props, context) {
         const { closeOnClickOverlay } = props

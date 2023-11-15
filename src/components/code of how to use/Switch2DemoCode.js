@@ -1,12 +1,12 @@
 const a =
 `<template>
-    <SwitchDetail v-model:value="bool" disabled />
+    <Switch v-model:value="bool" disabled />
 </template>
 <script>
 import { ref } from 'vue'; 
-import SwitchDetail from '../lib/SwitchDetail.vue'; 
+import Switch from '../lib/Switch.vue'; 
 export default {
-    components: { SwitchDetail }, 
+    components: { Switch }, 
     setup() {
         const bool = ref(false)
         return { bool }

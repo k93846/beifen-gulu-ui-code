@@ -12,7 +12,7 @@ import Tab from '../lib/Tab.vue';
 import Tabs from '../lib/Tabs.vue';
 export default {
     inheritAttrs: false,
-    components: { Tab, Tabs,ButtonDetail },
+    components: { Tab, Tabs,Button },
     setup() {
         const reselect = ref('导航1')
 

@@ -5,8 +5,8 @@
     <div class="demo">
         <h2>示例</h2>
         <div class="demo-component">
-            <ButtonDetail @click="toogle">显示Dialog</ButtonDetail>
-            <DialogDetail v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
+            <Button @click="toogle">显示Dialog</Button>
+            <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
                 <template v-slot:title>
                     <strong>提示</strong>
                 </template>
@@ -14,11 +14,11 @@
                     <div>hi</div>
                     <div>hi2</div>
                 </template>
-            </DialogDetail>
+            </Dialog>
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <ButtonDetail @click="seecode1">查看代码</ButtonDetail>
+            <Button @click="seecode1">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import DialogDetail from '../lib/Dialog.vue';
-import ButtonDetail from '../lib/Button.vue';
+import Dialog from '../lib/Dialog.vue';
+import Button from '../lib/Button.vue';
 import DialogCode from './code of how to use/DialogCode';
 import { ref } from 'vue';
 export default {
     components: {
-        DialogDetail, ButtonDetail
+        Dialog, Button
     },
     setup() {
         const codeVisible1 = ref(false)

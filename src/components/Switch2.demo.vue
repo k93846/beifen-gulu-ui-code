@@ -1,13 +1,13 @@
 <template>
     <!-- 已完成：修复disabled无效问题，添加return -->
-    <SwitchDetail v-model:value="bool" disabled/>
+    <Switch v-model:value="bool" disabled/>
 </template>
 
 <script>
 import { ref } from 'vue';
-import SwitchDetail from '../lib/Switch.vue';
+import Switch from '../lib/Switch.vue';
 export default {
-    components:{SwitchDetail},
+    components:{Switch},
     setup(){
         const bool = ref(false)
         return{bool}

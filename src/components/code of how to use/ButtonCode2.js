@@ -1,19 +1,19 @@
 const a = 
 ` <template>
-      <ButtonDetail :theme="'button'" :size="'big'">大大大</ButtonDetail>
-      <ButtonDetail :theme="'button'" :size="'normal'">普通</ButtonDetail>
-      <ButtonDetail :theme="'button'" :size="'small'">小小小</ButtonDetail>
-      <ButtonDetail :theme="'link'" :size="'big'">大大大</ButtonDetail>
-      <ButtonDetail :theme="'link'" :size="'normal'">普通</ButtonDetail>
-      <ButtonDetail :theme="'link'" :size="'small'">小小小</ButtonDetail>
-      <ButtonDetail :theme="'text'" :size="'big'">大大大</ButtonDetail>
-      <ButtonDetail :theme="'text'" :size="'normal'">普通</ButtonDetail>
-      <ButtonDetail :theme="'text'" :size="'small'">小小小</ButtonDetail>
+      <Button :theme="'button'" :size="'big'">大大大</Button>
+      <Button :theme="'button'" :size="'normal'">普通</Button>
+      <Button :theme="'button'" :size="'small'">小小小</Button>
+      <Button :theme="'link'" :size="'big'">大大大</Button>
+      <Button :theme="'link'" :size="'normal'">普通</Button>
+      <Button :theme="'link'" :size="'small'">小小小</Button>
+      <Button :theme="'text'" :size="'big'">大大大</Button>
+      <Button :theme="'text'" :size="'normal'">普通</Button>
+      <Button :theme="'text'" :size="'small'">小小小</Button>
  </template>
   <script>
- import ButtonDetail from '../lib/ButtonDetail.vue';
+ import Button from '../lib/Button.vue';
  export default {
-     components: { ButtonDetail }
+     components: { Button }
  }
  </script>`
 export default {a}

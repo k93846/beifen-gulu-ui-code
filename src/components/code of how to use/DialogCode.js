@@ -1,6 +1,6 @@
 const a = 
-`<ButtonDetail @click="toogle">toogle</ButtonDetail>
-<DialogDetail v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
+`<Button @click="toogle">toogle</Button>
+<Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
     <template v-slot:title>
         <strong>提示</strong>
     </template>
@@ -8,15 +8,15 @@ const a =
         <div>hi</div>
         <div>hi2</div>
     </template>
-</DialogDetail>
+</Dialog>
 
 <script>
-import DialogDetail from '../lib/DialogDetail.vue';
-import ButtonDetail from '../lib/ButtonDetail.vue';
+import Dialog from '../lib/Dialog.vue';
+import Button from '../lib/Button.vue';
 import { ref } from 'vue';
 export default {
     components: {
-        DialogDetail, ButtonDetail
+        Dialog, Button
     },
     setup() {
         const x = ref(false)

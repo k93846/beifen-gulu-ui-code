@@ -1,13 +1,13 @@
 const a = 
 ` <template>
-    <ButtonDetail :theme="'button'" disabled>禁用按钮</ButtonDetail>
-    <ButtonDetail :theme="'link'" disabled>禁用链接按钮</ButtonDetail>
-    <ButtonDetail :theme="'text'" disabled>禁用文本按钮</ButtonDetail>
+    <Button :theme="'button'" disabled>禁用按钮</Button>
+    <Button :theme="'link'" disabled>禁用链接按钮</Button>
+    <Button :theme="'text'" disabled>禁用文本按钮</Button>
  </template>
   <script>
- import ButtonDetail from '../lib/ButtonDetail.vue';
+ import Button from '../lib/Button.vue';
  export default {
-     components: { ButtonDetail }
+     components: { Button }
  }
  </script>`
 export default {a}

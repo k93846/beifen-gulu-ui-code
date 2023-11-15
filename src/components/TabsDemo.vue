@@ -13,7 +13,7 @@
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <ButtonDetail @click="seecode1">查看代码</ButtonDetail>
+            <Button @click="seecode1">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -28,11 +28,11 @@
 import { ref } from 'vue';
 import Tab from '../lib/Tab.vue';
 import Tabs from '../lib/Tabs.vue';
-import ButtonDetail from '../lib/Button.vue';
+import Button from '../lib/Button.vue';
 import TabsCode from './code of how to use/TabsCode.js'
 export default {
     inheritAttrs: false,
-    components: { Tab, Tabs,ButtonDetail },
+    components: { Tab, Tabs,Button },
     setup() {
         const reselect = ref('导航1')
         const codeVisible1 = ref(false)

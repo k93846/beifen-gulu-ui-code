@@ -6,13 +6,13 @@
         <div class="demo">
             <h2>示例1</h2>
             <div class="demo-component">
-                <ButtonDetail :theme="`button`">你好</ButtonDetail>
-                <ButtonDetail :theme="`link`">你好</ButtonDetail>
-                <ButtonDetail :theme="`text`">你好</ButtonDetail>
+                <Button :theme="`button`">你好</Button>
+                <Button :theme="`link`">你好</Button>
+                <Button :theme="`text`">你好</Button>
             </div>
             <div class="demo-actions">
                 <!-- 使得点击后出现代码已完成 -->
-                <ButtonDetail @click="seecode1">查看代码</ButtonDetail>
+                <Button @click="seecode1">查看代码</Button>
             </div>
             <div class="demo-code">
                 <!-- 已完成：封装代码文本，使用字符串 -->
@@ -25,12 +25,12 @@
         <div class="demo">
             <h2>示例5</h2>
             <div class="demo-component">
-                <ButtonDetail :theme="`button`" loading>加载按钮</ButtonDetail>
-                <ButtonDetail :theme="`button`">加载完毕</ButtonDetail>
+                <Button :theme="`button`" loading>加载按钮</Button>
+                <Button :theme="`button`">加载完毕</Button>
             </div>
             <div class="demo-actions">
                 <!-- 使得点击后出现代码已完成 -->
-                <ButtonDetail @click="seecode5">查看代码</ButtonDetail>
+                <Button @click="seecode5">查看代码</Button>
             </div>
             <div class="demo-code">
                 <!-- 已完成：封装代码文本，使用字符串 -->
@@ -42,24 +42,24 @@
         <div class="demo">
             <h2>示例2</h2>
             <div class="demo-component">
-                <ButtonDetail :theme="`button`" :size="`big`">大大大</ButtonDetail>
-                <ButtonDetail :theme="`button`" :size="`normal`">普通</ButtonDetail>
-                <ButtonDetail :theme="`button`" :size="`small`">小小小</ButtonDetail>
+                <Button :theme="`button`" :size="`big`">大大大</Button>
+                <Button :theme="`button`" :size="`normal`">普通</Button>
+                <Button :theme="`button`" :size="`small`">小小小</Button>
             </div>
             <div class="demo-component">
-                <ButtonDetail :theme="`link`" :size="`big`">大大大</ButtonDetail>
-                <ButtonDetail :theme="`link`" :size="`normal`">普通</ButtonDetail>
-                <ButtonDetail :theme="`link`" :size="`small`">小小小</ButtonDetail><br>
+                <Button :theme="`link`" :size="`big`">大大大</Button>
+                <Button :theme="`link`" :size="`normal`">普通</Button>
+                <Button :theme="`link`" :size="`small`">小小小</Button><br>
             </div>
             <div class="demo-component">
-                <ButtonDetail :theme="`text`" :size="`big`">大大大</ButtonDetail>
-                <ButtonDetail :theme="`text`" :size="`normal`">普通</ButtonDetail>
-                <ButtonDetail :theme="`text`" :size="`small`">小小小</ButtonDetail>
+                <Button :theme="`text`" :size="`big`">大大大</Button>
+                <Button :theme="`text`" :size="`normal`">普通</Button>
+                <Button :theme="`text`" :size="`small`">小小小</Button>
             </div>
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <ButtonDetail @click="seecode2">查看代码</ButtonDetail>
+            <Button @click="seecode2">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -71,25 +71,25 @@
     <div class="demo">
         <h2>示例3</h2>
         <div class="demo-component">
-            <ButtonDetail :theme="`button`" :level="`main`">主要按钮</ButtonDetail>
-            <ButtonDetail :theme="`button`" :level="`normal`">普通按钮</ButtonDetail>
-            <ButtonDetail :theme="`button`" :level="`danger`">危险按钮</ButtonDetail>
+            <Button :theme="`button`" :level="`main`">主要按钮</Button>
+            <Button :theme="`button`" :level="`normal`">普通按钮</Button>
+            <Button :theme="`button`" :level="`danger`">危险按钮</Button>
         </div>
 
         <div class="demo-component">
-            <ButtonDetail :theme="`link`" :level="`main`">主要链接按钮</ButtonDetail>
-            <ButtonDetail :theme="`link`" :level="`normal`">普通链接按钮</ButtonDetail>
-            <ButtonDetail :theme="`link`" :level="`danger`">危险链接按钮</ButtonDetail>
+            <Button :theme="`link`" :level="`main`">主要链接按钮</Button>
+            <Button :theme="`link`" :level="`normal`">普通链接按钮</Button>
+            <Button :theme="`link`" :level="`danger`">危险链接按钮</Button>
         </div>
 
         <div class="demo-component">
-            <ButtonDetail :theme="`text`" :level="`main`">主要文本按钮</ButtonDetail>
-            <ButtonDetail :theme="`text`" :level="`normal`">普通文本按钮</ButtonDetail>
-            <ButtonDetail :theme="`text`" :level="`danger`">危险文本按钮</ButtonDetail>
+            <Button :theme="`text`" :level="`main`">主要文本按钮</Button>
+            <Button :theme="`text`" :level="`normal`">普通文本按钮</Button>
+            <Button :theme="`text`" :level="`danger`">危险文本按钮</Button>
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <ButtonDetail @click="seecode3">查看代码</ButtonDetail>
+            <Button @click="seecode3">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -102,13 +102,13 @@
     <div class="demo">
         <h2>示例4</h2>
         <div class="demo-component">
-            <ButtonDetail :theme="`button`" disabled>禁用按钮</ButtonDetail>
-            <ButtonDetail :theme="`link`" disabled>禁用链接按钮</ButtonDetail>
-            <ButtonDetail :theme="`text`" disabled>禁用文本按钮</ButtonDetail>
+            <Button :theme="`button`" disabled>禁用按钮</Button>
+            <Button :theme="`link`" disabled>禁用链接按钮</Button>
+            <Button :theme="`text`" disabled>禁用文本按钮</Button>
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <ButtonDetail @click="seecode4">查看代码</ButtonDetail>
+            <Button @click="seecode4">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -121,7 +121,7 @@
 
 <script>
 import { ref } from 'vue';
-import ButtonDetail from '../lib/Button.vue';
+import Button from '../lib/Button.vue';
 import ButtonCode1 from './code of how to use/ButtonCode1';
 import ButtonCode2 from './code of how to use/ButtonCode2';
 import ButtonCode3 from './code of how to use/ButtonCode3';
@@ -129,7 +129,7 @@ import ButtonCode4 from './code of how to use/ButtonCode4';
 import ButtonCode5 from './code of how to use/ButtonCode5';
 
 export default {
-    components: { ButtonDetail },
+    components: { Button },
     setup() {
         const codeVisible1 = ref(false)
         const codeVisible2 = ref(false)

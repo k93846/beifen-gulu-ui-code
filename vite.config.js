@@ -8,8 +8,8 @@ export default defineConfig({
   // build: {
   //   lib: {
   //     entry: resolve(__dirname, 'src/lib/index.js'),
-  //     name: 'gulu-ui',
-  //     fileName: 'gulu-ui'
+  //     name: 'SuCai-ui',
+  //     fileName: 'SuCai-ui'
   //   },
   //   rollupOptions: {
   //     external: ['vue'],

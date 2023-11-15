@@ -8,7 +8,7 @@
       </div>
       <div class="demo-actions">
         <!-- 使得点击后出现代码已完成 -->
-        <ButtonDetail @click="seeCode1">查看代码</ButtonDetail>
+        <Button @click="seeCode1">查看代码</Button>
       </div>
       <div class="demo-code">
         <!-- 已完成：封装代码文本，使用字符串 -->
@@ -26,7 +26,7 @@
         <Switch2Demo></Switch2Demo>
       </div>
       <div class="demo-actions">
-        <ButtonDetail @click="seeCode2">查看代码</ButtonDetail>
+        <Button @click="seeCode2">查看代码</Button>
       </div>
       <div class="demo-code">
         <article class="markdown-body">
@@ -39,15 +39,15 @@
 
 <script>
 import { ref } from 'vue';
-import SwitchDetail from '../lib/Switch.vue';
-import ButtonDetail from '../lib/Button.vue';
+import Switch from '../lib/Switch.vue';
+import Button from '../lib/Button.vue';
 import Switch1Demo from './Switch1.demo.vue';
 import Switch2Demo from './Switch2.demo.vue';
 import Switch1DemoCode from './code of how to use/Switch1DemoCode.js'
 import Switch2DemoCode from './code of how to use/Switch2DemoCode.js'
 
 export default {
-  components: { SwitchDetail, ButtonDetail, Switch1Demo, Switch2Demo },
+  components: { Switch, Button, Switch1Demo, Switch2Demo },
   setup() {
     const bool = ref(false)
     const codeVisible1 = ref(false)

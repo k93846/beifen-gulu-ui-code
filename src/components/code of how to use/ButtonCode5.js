@@ -1,12 +1,12 @@
 const a = 
 ` <template>
-     <ButtonDetail :theme="'button'" loading>加载按钮</ButtonDetail>
-     <ButtonDetail :theme="'button'">加载完毕</ButtonDetail>
+     <Button :theme="'button'" loading>加载按钮</Button>
+     <Button :theme="'button'">加载完毕</Button>
  </template>
   <script>
- import ButtonDetail from '../lib/ButtonDetail.vue';
+ import Button from '../lib/Button.vue';
  export default {
-     components: { ButtonDetail }
+     components: { Button }
  }
  </script>`
 export default {a}
