@@ -5,7 +5,7 @@
     <div class="demo">
         <h2>示例</h2>
         <div class="demo-component">
-            <ButtonDetail @click="toogle">toogle</ButtonDetail>
+            <ButtonDetail @click="toogle">显示Dialog</ButtonDetail>
             <DialogDetail v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
                 <template v-slot:title>
                     <strong>提示</strong>

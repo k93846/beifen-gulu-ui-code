@@ -80,10 +80,10 @@ $color: #007974;
     }
 
     >li {
-      @media(max-width:800px) {
-        width: 90%;
-    }
       width:375px;
+      @media(max-width:500px) {
+        width: 340px;
+    }
       margin: 16px 0;
       display: grid;
       justify-content: start;

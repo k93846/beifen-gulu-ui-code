@@ -44,67 +44,77 @@
             <div class="demo-component">
                 <ButtonDetail :theme="`button`" :size="`big`">大大大</ButtonDetail>
                 <ButtonDetail :theme="`button`" :size="`normal`">普通</ButtonDetail>
-                <ButtonDetail :theme="`button`" :size="`small`">小小小</ButtonDetail><br>
+                <ButtonDetail :theme="`button`" :size="`small`">小小小</ButtonDetail>
+            </div>
+            <div class="demo-component">
                 <ButtonDetail :theme="`link`" :size="`big`">大大大</ButtonDetail>
                 <ButtonDetail :theme="`link`" :size="`normal`">普通</ButtonDetail>
                 <ButtonDetail :theme="`link`" :size="`small`">小小小</ButtonDetail><br>
+            </div>
+            <div class="demo-component">
                 <ButtonDetail :theme="`text`" :size="`big`">大大大</ButtonDetail>
                 <ButtonDetail :theme="`text`" :size="`normal`">普通</ButtonDetail>
                 <ButtonDetail :theme="`text`" :size="`small`">小小小</ButtonDetail>
             </div>
-            <div class="demo-actions">
-                <!-- 使得点击后出现代码已完成 -->
-                <ButtonDetail @click="seecode2">查看代码</ButtonDetail>
-            </div>
-            <div class="demo-code">
-                <!-- 已完成：封装代码文本，使用字符串 -->
-                <article class="markdown-body">
-                    <pre v-if="codeVisible2" v-text="ButtonCode2.a"></pre>
-                </article>
-            </div>
         </div>
-        <div class="demo">
-            <h2>示例3</h2>
-            <div class="demo-component">
-                <ButtonDetail :theme="`button`" :level="`main`">主要按钮</ButtonDetail>
-                <ButtonDetail :theme="`button`" :level="`normal`">普通按钮</ButtonDetail>
-                <ButtonDetail :theme="`button`" :level="`danger`">危险按钮</ButtonDetail><br>
-                <ButtonDetail :theme="`link`" :level="`main`">主要链接按钮</ButtonDetail>
-                <ButtonDetail :theme="`link`" :level="`normal`">普通链接按钮</ButtonDetail>
-                <ButtonDetail :theme="`link`" :level="`danger`">危险链接按钮</ButtonDetail><br>
-                <ButtonDetail :theme="`text`" :level="`main`">主要文本按钮</ButtonDetail>
-                <ButtonDetail :theme="`text`" :level="`normal`">普通文本按钮</ButtonDetail>
-                <ButtonDetail :theme="`text`" :level="`danger`">危险文本按钮</ButtonDetail>
-            </div>
-            <div class="demo-actions">
-                <!-- 使得点击后出现代码已完成 -->
-                <ButtonDetail @click="seecode3">查看代码</ButtonDetail>
-            </div>
-            <div class="demo-code">
-                <!-- 已完成：封装代码文本，使用字符串 -->
-                <article class="markdown-body">
-                    <pre v-if="codeVisible3" v-text="ButtonCode3.a"></pre>
-                </article>
-            </div>
+        <div class="demo-actions">
+            <!-- 使得点击后出现代码已完成 -->
+            <ButtonDetail @click="seecode2">查看代码</ButtonDetail>
+        </div>
+        <div class="demo-code">
+            <!-- 已完成：封装代码文本，使用字符串 -->
+            <article class="markdown-body">
+                <pre v-if="codeVisible2" v-text="ButtonCode2.a"></pre>
+            </article>
+        </div>
+    </div>
+    <div class="demo">
+        <h2>示例3</h2>
+        <div class="demo-component">
+            <ButtonDetail :theme="`button`" :level="`main`">主要按钮</ButtonDetail>
+            <ButtonDetail :theme="`button`" :level="`normal`">普通按钮</ButtonDetail>
+            <ButtonDetail :theme="`button`" :level="`danger`">危险按钮</ButtonDetail>
         </div>
 
-        <div class="demo">
-            <h2>示例4</h2>
-            <div class="demo-component">
-                <ButtonDetail :theme="`button`" disabled>禁用按钮</ButtonDetail>
-                <ButtonDetail :theme="`link`" disabled>禁用链接按钮</ButtonDetail>
-                <ButtonDetail :theme="`text`" disabled>禁用文本按钮</ButtonDetail>
-            </div>
-            <div class="demo-actions">
-                <!-- 使得点击后出现代码已完成 -->
-                <ButtonDetail @click="seecode4">查看代码</ButtonDetail>
-            </div>
-            <div class="demo-code">
-                <!-- 已完成：封装代码文本，使用字符串 -->
-                <article class="markdown-body">
-                    <pre v-if="codeVisible4" v-text="ButtonCode4.a"></pre>
-                </article>
-            </div>
+        <div class="demo-component">
+            <ButtonDetail :theme="`link`" :level="`main`">主要链接按钮</ButtonDetail>
+            <ButtonDetail :theme="`link`" :level="`normal`">普通链接按钮</ButtonDetail>
+            <ButtonDetail :theme="`link`" :level="`danger`">危险链接按钮</ButtonDetail>
+        </div>
+
+        <div class="demo-component">
+            <ButtonDetail :theme="`text`" :level="`main`">主要文本按钮</ButtonDetail>
+            <ButtonDetail :theme="`text`" :level="`normal`">普通文本按钮</ButtonDetail>
+            <ButtonDetail :theme="`text`" :level="`danger`">危险文本按钮</ButtonDetail>
+        </div>
+        <div class="demo-actions">
+            <!-- 使得点击后出现代码已完成 -->
+            <ButtonDetail @click="seecode3">查看代码</ButtonDetail>
+        </div>
+        <div class="demo-code">
+            <!-- 已完成：封装代码文本，使用字符串 -->
+            <article class="markdown-body">
+                <pre v-if="codeVisible3" v-text="ButtonCode3.a"></pre>
+            </article>
+        </div>
+    </div>
+
+    <div class="demo">
+        <h2>示例4</h2>
+        <div class="demo-component">
+            <ButtonDetail :theme="`button`" disabled>禁用按钮</ButtonDetail>
+            <ButtonDetail :theme="`link`" disabled>禁用链接按钮</ButtonDetail>
+            <ButtonDetail :theme="`text`" disabled>禁用文本按钮</ButtonDetail>
+        </div>
+        <div class="demo-actions">
+            <!-- 使得点击后出现代码已完成 -->
+            <ButtonDetail @click="seecode4">查看代码</ButtonDetail>
+        </div>
+        <div class="demo-code">
+            <!-- 已完成：封装代码文本，使用字符串 -->
+            <article class="markdown-body">
+                <pre v-if="codeVisible4" v-text="ButtonCode4.a"></pre>
+            </article>
         </div>
     </div>
 </template>
@@ -120,28 +130,28 @@ import ButtonCode5 from './code of how to use/ButtonCode5';
 
 export default {
     components: { ButtonDetail },
-    setup(){
-        const codeVisible1 = ref( false)
-        const codeVisible2 = ref( false)
-        const codeVisible3 = ref( false)
-        const codeVisible4 = ref( false)
-        const codeVisible5 = ref( false)
-        const seecode1 = ()=>{
+    setup() {
+        const codeVisible1 = ref(false)
+        const codeVisible2 = ref(false)
+        const codeVisible3 = ref(false)
+        const codeVisible4 = ref(false)
+        const codeVisible5 = ref(false)
+        const seecode1 = () => {
             codeVisible1.value = !codeVisible1.value
         }
-        const seecode2 = ()=>{
+        const seecode2 = () => {
             codeVisible2.value = !codeVisible2.value
         }
-        const seecode3 = ()=>{
+        const seecode3 = () => {
             codeVisible3.value = !codeVisible3.value
         }
-        const seecode4 = ()=>{
+        const seecode4 = () => {
             codeVisible4.value = !codeVisible4.value
         }
-        const seecode5 = ()=>{
+        const seecode5 = () => {
             codeVisible5.value = !codeVisible5.value
         }
-        return{ seecode1,seecode2,seecode3,seecode4,seecode5,ButtonCode1,ButtonCode2,ButtonCode3,ButtonCode4,ButtonCode5,codeVisible1,codeVisible2,codeVisible3,codeVisible4,codeVisible5}
+        return { seecode1, seecode2, seecode3, seecode4, seecode5, ButtonCode1, ButtonCode2, ButtonCode3, ButtonCode4, ButtonCode5, codeVisible1, codeVisible2, codeVisible3, codeVisible4, codeVisible5 }
     }
 }
 </script>
@@ -161,6 +171,14 @@ $border-color: #d9d9d9;
 
     &-component {
         padding: 16px;
+        &+&{
+            padding-top:0px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        gap: 16px;        
     }
 
     &-actions {
@@ -180,9 +198,10 @@ $border-color: #d9d9d9;
     }
 }
 
-.markdown-body{
-    >pre{
-        line-height:inherit;
+.markdown-body {
+    >pre {
+        line-height: inherit;
     }
 }
+
 </style>

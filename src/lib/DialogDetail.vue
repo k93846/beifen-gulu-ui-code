@@ -12,8 +12,8 @@
                         <slot name="content"></slot>
                     </main>
                     <footer>
-                        <ButtonDetail :level="`main`" @click="ok">ok</ButtonDetail>
-                        <ButtonDetail @click="cancel">cancel</ButtonDetail>
+                        <ButtonDetail :level="`main`" @click="ok">确定</ButtonDetail>
+                        <ButtonDetail @click="cancel">取消</ButtonDetail>
                     </footer>
                 </div>
             </div>
@@ -73,6 +73,7 @@ export default {
 $radius: 4px;
 $border-color: #d9d9d9;
 
+
 .gulu-dialog {
     background: white;
     border-radius: $radius;
@@ -115,7 +116,13 @@ $border-color: #d9d9d9;
         border-top: 1px solid $border-color;
         padding: 12px 16px;
         text-align: right;
+        button:nth-child(2){
+            margin-left:calc(100% - 75px - 45px);
+        }
     }
+    
+
+    
 
     &-close {
         position: relative;
